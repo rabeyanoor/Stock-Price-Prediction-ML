@@ -63,7 +63,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     
     with gr.Row():
         with gr.Column():
-            date_input = gr.Textbox(label="Date (DD-MM-YYYY)", value=datetime.today().strftime('%d-%m-%y'))
+            date_input = gr.Textbox(label="Date (DD-MM-YYYY)", value=datetime.today().strftime('%Y-%m-%d'))
             s1 = gr.Number(label="Stock 1 Value", value=6.0)
             s2 = gr.Number(label="Stock 2 Value", value=70.0)
             s3 = gr.Number(label="Stock 3 Value", value=80.0)
